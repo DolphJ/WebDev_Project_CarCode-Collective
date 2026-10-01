@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+<body>
+    <style>
+        nav[aria-label="Main navigation"] {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: #fff;
+            padding: 0.75rem 1rem;
+            border: 1px solid #000;
+        }
+
+        nav[aria-label="Main navigation"] ul {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav[aria-label="Main navigation"] a {
+            color: #000;
+            text-decoration: none;
+            padding: 0.5rem 0.75rem;
+            border-radius: 0.25rem;
+        }
+
+        nav[aria-label="Main navigation"] a:hover,
+        nav[aria-label="Main navigation"] a[aria-current="page"] {
+            background-color: #000;
+            color: #fff;
+        }
+    </style>
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html" aria-current="page">Contact Us</a></li>
+        </ul>
+    </nav>
+    <h1>Contact Us</h1>
+    
+    <p>Have questions or want to learn more about our services? Reach out to us!👍</p>
+    <form action="submit_form.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+
+    <section aria-label="Opening hours">
+        <h2>Opening Hours</h2>
+        <ul>
+            <li>Monday: 9:00 AM - 5:00 PM</li>
+            <li>Tuesday: 9:00 AM - 5:00 PM</li>
+            <li>Wednesday: 9:00 AM - 5:00 PM</li>
+            <li>Thursday: 9:00 AM - 5:00 PM</li>
+            <li>Friday: 9:00 AM - 5:00 PM</li>
+        </ul>
+    </section>
+
+</body>
+</html>

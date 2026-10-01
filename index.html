@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .main-navigation {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: #222;
+        }
+
+        .main-navigation ul {
+            display: flex;
+            gap: 1.5rem;
+            margin: 0;
+            padding: 1rem 2rem;
+            list-style: none;
+        }
+
+        .main-navigation a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <img src="fah.png" alt="Wheels on fire!" width="50%" height="auto">
+
+    <nav class="main-navigation" aria-label="Main navigation">
+        <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <nav aria-label="Vehicle filters">
+        <label for="make">Make:</label>
+        <select id="make" name="make">
+            <option value="">Select make</option>
+            <option value="audi">Audi</option>
+            <option value="bmw">BMW</option>
+            <option value="ford">Ford</option>
+            <option value="toyota">Toyota</option>
+        </select>
+
+        <label for="model">Model:</label>
+        <select id="model" name="model">
+            <option value="">Select model</option>
+            <option value="mustang">Mustang</option>
+            <option value="3-series">3 Series</option>
+            <option value="corolla">Corolla</option>
+            <option value="a4">A4</option>
+        </select>
+
+        <label for="min-year">Minimum year:</label>
+        <select id="min-year" name="min-year">
+            <option value="">Any year</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+        </select>
+
+        <label for="max-year">Maximum year:</label>
+        <select id="max-year" name="max-year">
+            <option value="">Any year</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+        </select>
+
+        <button type="button" id="search-vehicles">Search</button>
+    </nav>
+
+    
+
+
+</body>
+</html>
